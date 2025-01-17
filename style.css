@@ -43,6 +43,7 @@ body {
     -webkit-font-smoothing: antialiased;
     font-family: 'teamdao', sans-serif;
     background-color: var(--background);
+    overflow: hidden;
 }
 
 /*
@@ -105,9 +106,9 @@ span, footer, button {
 .main {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: 820px;
     color: var(--text-default);
-    max-width: 1000px;
+    max-width: 1458px;
     margin: 4rem auto;
 }
 
@@ -227,15 +228,16 @@ p {
 /* Flexible Layout */
 .main {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1458px;
+    height: 820px;
     margin: 0 auto;
-    padding: 1rem;
+    padding: 4rem 1rem 1rem 1rem;
 }
 
 .details, .header {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
     gap: 1rem;
 }
@@ -262,7 +264,7 @@ img {
     position: absolute;
     background: rgba(36, 234, 41, 0.1); 
     border-radius: 50%;
-    animation: float 10s infinite alternate;
+    /* animation: float 10s infinite alternate; */
     opacity: 0.6;
 }
 
